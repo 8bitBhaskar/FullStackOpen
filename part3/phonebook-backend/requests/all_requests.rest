@@ -1,0 +1,18 @@
+GET http://localhost:3001/api/persons
+
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name":"Issac Newton",
+    "number":"151-1821292"
+}
+
+
+###
+DELETE http://localhost:3001/api/persons/6460f36c6fcc7d8108165d0d
+
+
+###
+GET http://localhost:3001/api/persons/645f0b597154f3bc9bdae2e6
