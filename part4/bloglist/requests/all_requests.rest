@@ -1,0 +1,39 @@
+###
+GET http://localhost:3003/api/blogs
+
+### 
+POST http://localhost:3003/api/users 
+Content-Type: application/json
+
+{
+    "username":"AccessibleLambda",
+    "name":"Jichael Mackson",
+    "password":"CoolDancer@123"
+}
+
+###
+POST http://localhost:3003/api/login 
+Content-Type: application/json
+
+{
+    "username":"AccessibleLambda",
+    "password":"CoolDancer@123"
+}
+
+
+###
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFjY2Vzc2libGVMYW1iZCIsImlkIjoiNjQ3MmQ5MjQzMjkwNGM2MjM2NWZhODRhIiwiaWF0IjoxNjg1MjQ4NTEwLCJleHAiOjE2ODUyNTIxMTB9.AGA8KNVnya88agJqC-2fNk16EGPJCTi2leG37cEfXqY
+
+{
+    "title":"Mildly Cool Blog",
+    "author":"Jichael Mackson",
+    "likes":"7",
+    "url":"www.example.com"
+}
+
+
+### 
+DELETE http://localhost:3003/api/blogs/646325f2f5730fb715441cd2
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFjY2Vzc2libGVMYW1iZCIsImlkIjoiNjQ3MmQ5MjQzMjkwNGM2MjM2NWZhODRhIiwiaWF0IjoxNjg1MjQ4NTEwLCJleHAiOjE2ODUyNTIxMTB9.AGA8KNVnya88agJqC-2fNk16EGPJCTi2leG37cEfXqY
